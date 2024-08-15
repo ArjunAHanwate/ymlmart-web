@@ -5,7 +5,7 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import addToCart from '../helpers/addToCart';
 import Context from '../context';
-
+import { BiImageAlt } from "react-icons/bi";
 const HorizontalCardProduct = ({ category, heading }) => {
     const [data, setData] = useState([]); // Ensure data is always initialized as an array
     const [loading, setLoading] = useState(true);

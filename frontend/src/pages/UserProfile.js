@@ -69,16 +69,16 @@ const Profile = () => {
             </div>
           </div>
         );
-      case 'Wishlist':
-        return (
-          <div>
-            <h1 className="text-2xl font-bold mb-4">Wishlist</h1>
-            <div className="flex flex-col items-center">
-              <MdSpeakerNotesOff style={{ fontSize: '6rem' }} className="text-sky-600 text-6xl mb-2" />
-              <p>No product found in wishlist</p>
-            </div>
-          </div>
-        );
+      // case 'Wishlist':
+      //   return (
+      //     <div>
+      //       <h1 className="text-2xl font-bold mb-4">Wishlist</h1>
+      //       <div className="flex flex-col items-center">
+      //         <MdSpeakerNotesOff style={{ fontSize: '6rem' }} className="text-sky-600 text-6xl mb-2" />
+      //         <p>No product found in wishlist</p>
+      //       </div>
+      //     </div>
+      //   );
       case 'Address':
         return (
           <div>
@@ -89,16 +89,16 @@ const Profile = () => {
             </div>
           </div>
         );
-      case 'Coupons':
-        return (
-          <div>
-            <h1 className="text-2xl font-bold mb-4">Your Coupons</h1>
-            <div className="flex flex-col items-center">
-            <RiDiscountPercentFill style={{ fontSize: '6rem' }} className="text-sky-600 mb-2" />
-            <p>No coupon found!</p>
-            </div>
-          </div>
-        );
+      // case 'Coupons':
+      //   return (
+      //     <div>
+      //       <h1 className="text-2xl font-bold mb-4">Your Coupons</h1>
+      //       <div className="flex flex-col items-center">
+      //       <RiDiscountPercentFill style={{ fontSize: '6rem' }} className="text-sky-600 mb-2" />
+      //       <p>No coupon found!</p>
+      //       </div>
+      //     </div>
+      //   );
       case 'Track Order':
         return (
           <div>
@@ -129,15 +129,15 @@ const Profile = () => {
             <li className={activeSection === 'My Orders' ? 'font-bold text-sky-600' : ''}>
               <button onClick={() => { setActiveSection('My Orders'); toggleSidebar(); }} className="text-lg">My Orders</button>
             </li>
-            <li className={activeSection === 'Wishlist' ? 'font-bold text-sky-600' : ''}>
+            {/* <li className={activeSection === 'Wishlist' ? 'font-bold text-sky-600' : ''}>
               <button onClick={() => { setActiveSection('Wishlist'); toggleSidebar(); }} className="text-lg">Wishlist</button>
-            </li>
+            </li> */}
             <li className={activeSection === 'Address' ? 'font-bold text-sky-600' : ''}>
               <button onClick={() => { setActiveSection('Address'); toggleSidebar(); }} className="text-lg">Address</button>
             </li>
-            <li className={activeSection === 'Coupons' ? 'font-bold text-sky-600' : ''}>
+            {/* <li className={activeSection === 'Coupons' ? 'font-bold text-sky-600' : ''}>
               <button onClick={() => { setActiveSection('Coupons'); toggleSidebar(); }} className="text-lg">Coupons</button>
-            </li>
+            </li> */}
             <li className={activeSection === 'Track Order' ? 'font-bold text-sky-600' : ''}>
               <button onClick={() => { setActiveSection('Track Order'); toggleSidebar(); }} className="text-lg">Track Order</button>
             </li>
